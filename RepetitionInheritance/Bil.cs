@@ -47,10 +47,7 @@ namespace RepetitionInheritance
             return BilPrisExAfgift + RegistreringsAfgift();
         }
 
-        public virtual int HalvÅrligEjerAfgift()
-        {
-            return 1000;
-        }
+        public abstract int HalvÅrligEjerAfgift();
 
         public Bil(string mærke, int prisExAfgift, int købsÅr, string registreringsNr, int kmPrLiter)
         {

@@ -12,8 +12,13 @@ namespace RepetitionInheritance
 
         public override int HalvÅrligEjerAfgift()
         {
-            return base.HalvÅrligEjerAfgift() + 500;
+            return 1500;
         }
+
+        //public override int HalvÅrligEjerAfgift()
+        //{
+        //    return base.HalvÅrligEjerAfgift() + 500;
+        //}
 
         public DieselBil(string mærke, int prisExAfgift, int købsÅr, string registreringsNr, int kmPrLiter, bool partikelFilter) : base(mærke, prisExAfgift, købsÅr, registreringsNr, kmPrLiter)
         {
