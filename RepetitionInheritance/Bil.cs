@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace RepetitionInheritance
 {
-    class Bil
+    public abstract class Bil
     {
-        private int BilPrisExAfgift { get; set; }
-        private int KøbsÅr { get; set; }
+        public int BilPrisExAfgift { get; private set; }
+        public int KøbsÅr { get; private set; }
         public string Mærke { get; set; }
         public string RegistreringsNr { get; set; }
         public int KmPrLiter { get; set; }
