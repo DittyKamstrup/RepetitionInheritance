@@ -10,11 +10,17 @@ namespace RepetitionInheritance
     {
         public bool PartikelFilter { get; set; }
 
-        // Kig på NedarvningFremlæggelse Repo'et
+        public override int HalvÅrligEjerAfgift()
+        {
+            return base.HalvÅrligEjerAfgift() + 500;
+        }
 
+        public DieselBil(string mærke, int prisExAfgift, int købsÅr, string registreringsNr, int kmPrLiter, bool partikelFilter) : base(mærke, prisExAfgift, købsÅr, registreringsNr, kmPrLiter)
+        {
+            PartikelFilter = partikelFilter;
+        }
 
-
-        public DieselBil(string mærke, int prisExAfgift, int købsÅr, int kmPrLiter) : base(mærke, prisExAfgift, købsÅr, kmPrLiter)
+        public DieselBil(string mærke, int prisExAfgift, int købsÅr, string registreringsNr, int kmPrLiter) : this(mærke, prisExAfgift, købsÅr, registreringsNr, kmPrLiter, true)
         {
         }
     }

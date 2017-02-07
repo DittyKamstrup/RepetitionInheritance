@@ -52,11 +52,12 @@ namespace RepetitionInheritance
             return 1000;
         }
 
-        public Bil(string mærke, int prisExAfgift, int købsÅr, int kmPrLiter)
+        public Bil(string mærke, int prisExAfgift, int købsÅr, string registreringsNr, int kmPrLiter)
         {
             Mærke = mærke;
             BilPrisExAfgift = prisExAfgift;
             KøbsÅr = købsÅr;
+            RegistreringsNr = registreringsNr;
             KmPrLiter = kmPrLiter;
         }
     }
