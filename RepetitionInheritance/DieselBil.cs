@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RepetitionInheritance
 {
-    class DieselBil : Bil
+    public class DieselBil : Bil
     {
         public bool PartikelFilter { get; set; }
 
