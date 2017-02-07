@@ -12,7 +12,24 @@ namespace RepetitionInheritance
 
         public override int HalvÅrligEjerAfgift()
         {
-            return 1500;
+            int value = 0;
+
+            if (PartikelFilter == false)
+            {
+                value += 500;
+            }
+            if (KmPrLiter < 15)
+            {
+                return value + 2000;
+            }
+            else if (KmPrLiter >= 15 && KmPrLiter <= 25)
+            {
+                return value + 1000;
+            }
+            else
+            {
+                return value + 350;
+            }
         }
 
         //public override int HalvÅrligEjerAfgift()
