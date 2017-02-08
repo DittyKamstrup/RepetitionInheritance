@@ -50,6 +50,39 @@ namespace RepetitionInheritance
                 Console.WriteLine("Registrerings Nr : " + bil.RegistreringsNr + ", Km pr Liter : " + bil.KmPrLiter + ", Halvårlige Ejerafgift: " + bil.HalvÅrligEjerAfgift() + ", Tankstørrelse: " + bil.Tank);
                 Console.WriteLine("");
             }
-        }
+
+            List<Bil> bilListe = new List<Bil>();
+
+            bilListe.Add(dieselBil1);
+            bilListe.Add(dieselBil2);
+            bilListe.Add(dieselBil3);
+            bilListe.Add(dieselBil4);
+            bilListe.Add(dieselBil5);
+
+            bilListe.Add(benzinBil1);
+            bilListe.Add(benzinBil2);
+            bilListe.Add(benzinBil3);
+            bilListe.Add(benzinBil4);
+            bilListe.Add(benzinBil5);
+
+            foreach (Bil bil in bilListe)
+            {
+                //if (bil is ElBil)
+                //{
+                //    Console.WriteLine()
+                //}
+                if (bil is DieselBil)
+                {
+                    DieselBil dBil = bil as DieselBil;
+                    Console.WriteLine(dBil.GetType().ToString(), dBil.Mærke, dBil.BilPrisExAfgift, dBil.KøbsÅr, dBil.RegistreringsNr, dBil.KmPrLiter, dBil.Tank);
+                    
+                    //Bil bil1 = dieselBil1 as Bil;
+                }
+                else if (bil is BenzinBil)
+                {
+                    Console.WriteLine();
+                }
+            }
+        }            
     }
 }
