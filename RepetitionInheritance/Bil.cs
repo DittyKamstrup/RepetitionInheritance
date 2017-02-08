@@ -13,6 +13,7 @@ namespace RepetitionInheritance
         public string Mærke { get; set; }
         public string RegistreringsNr { get; set; }
         public int KmPrLiter { get; set; }
+        public int Tank { get; set; }
 
 
         public virtual int RegistreringsAfgift()
@@ -49,13 +50,14 @@ namespace RepetitionInheritance
 
         public abstract int HalvÅrligEjerAfgift();
 
-        public Bil(string mærke, int prisExAfgift, int købsÅr, string registreringsNr, int kmPrLiter)
+        public Bil(string mærke, int prisExAfgift, int købsÅr, string registreringsNr, int kmPrLiter, int tank)
         {
             Mærke = mærke;
             BilPrisExAfgift = prisExAfgift;
             KøbsÅr = købsÅr;
             RegistreringsNr = registreringsNr;
             KmPrLiter = kmPrLiter;
+            Tank = tank;
         }
     }
 }

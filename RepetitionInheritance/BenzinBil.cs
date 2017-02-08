@@ -8,7 +8,7 @@ namespace RepetitionInheritance
 {
     public sealed class BenzinBil : Bil
     {
-        public BenzinBil(string mærke, int prisExAfgift, int købsÅr, string registreringsNr, int kmPrLiter) : base(mærke, prisExAfgift, købsÅr, registreringsNr, kmPrLiter)
+        public BenzinBil(string mærke, int prisExAfgift, int købsÅr, string registreringsNr, int kmPrLiter, int tank) : base(mærke, prisExAfgift, købsÅr, registreringsNr, kmPrLiter, tank)
         {
         }
 

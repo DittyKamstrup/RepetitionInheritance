@@ -37,12 +37,12 @@ namespace RepetitionInheritance
         //    return base.HalvÅrligEjerAfgift() + 500;
         //}
 
-        public DieselBil(string mærke, int prisExAfgift, int købsÅr, string registreringsNr, int kmPrLiter, bool partikelFilter) : base(mærke, prisExAfgift, købsÅr, registreringsNr, kmPrLiter)
+        public DieselBil(string mærke, int prisExAfgift, int købsÅr, string registreringsNr, int kmPrLiter, int tank, bool partikelFilter) : base(mærke, prisExAfgift, købsÅr, registreringsNr, kmPrLiter, tank)
         {
             PartikelFilter = partikelFilter;
         }
 
-        public DieselBil(string mærke, int prisExAfgift, int købsÅr, string registreringsNr, int kmPrLiter) : this(mærke, prisExAfgift, købsÅr, registreringsNr, kmPrLiter, true)
+        public DieselBil(string mærke, int prisExAfgift, int købsÅr, string registreringsNr, int kmPrLiter, int tank) : this(mærke, prisExAfgift, købsÅr, registreringsNr, kmPrLiter, tank, true)
         {
         }
     }
