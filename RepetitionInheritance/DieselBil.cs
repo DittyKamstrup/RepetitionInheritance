@@ -37,6 +37,11 @@ namespace RepetitionInheritance
         //    return base.HalvÅrligEjerAfgift() + 500;
         //}
 
+        public override int Rækkevidde()
+        {
+            return Tank * KmPrLiter;
+        }
+
         public DieselBil(string mærke, int prisExAfgift, int købsÅr, string registreringsNr, int kmPrLiter, int tank, bool partikelFilter) : base(mærke, prisExAfgift, købsÅr, registreringsNr, kmPrLiter, tank)
         {
             PartikelFilter = partikelFilter;

@@ -30,5 +30,10 @@ namespace RepetitionInheritance
                 return value + 320;
             }
         }
+
+        public override int Rækkevidde()
+        {
+            return Tank * KmPrLiter;
+        }
     }
 }

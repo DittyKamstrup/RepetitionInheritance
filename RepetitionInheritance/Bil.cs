@@ -49,6 +49,7 @@ namespace RepetitionInheritance
         }
 
         public abstract int HalvÅrligEjerAfgift();
+        public abstract int Rækkevidde();
 
         public Bil(string mærke, int prisExAfgift, int købsÅr, string registreringsNr, int kmPrLiter, int tank)
         {
