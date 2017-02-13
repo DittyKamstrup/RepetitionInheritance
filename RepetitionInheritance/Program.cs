@@ -32,7 +32,7 @@ namespace RepetitionInheritance
 
             List<BenzinBil> benzinListe = new List<BenzinBil>();
 
-            bBenzinBil benzinBil1 = new BenzinBil("Seat", 500, 2014, "HJ 34 735", 30, 200);
+            BenzinBil benzinBil1 = new BenzinBil("Seat", 500, 2014, "HJ 34 735", 30, 200);
             BenzinBil benzinBil2 = new BenzinBil("Peugeot", 550, 2015, "MK 97 254", 35, 300);
             BenzinBil benzinBil3 = new BenzinBil("Mercedes", 2000, 2016, "XZ 98 243", 50, 500);
             BenzinBil benzinBil4 = new BenzinBil("Toyota", 300, 2014, "OP 23 547", 27, 400);
