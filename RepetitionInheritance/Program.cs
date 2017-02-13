@@ -41,8 +41,8 @@ namespace RepetitionInheritance
             benzinListe.Add(benzinBil1);
             benzinListe.Add(benzinBil2);
             benzinListe.Add(benzinBil3);
-            benzinListe.Add(benzinBil4);
-            benzinListe.Add(benzinBil5);
+            //benzinListe.Add(benzinBil4);
+            //benzinListe.Add(benzinBil5);
 
             foreach (BenzinBil bil in benzinListe)
             {
