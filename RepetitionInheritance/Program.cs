@@ -32,7 +32,7 @@ namespace RepetitionInheritance
 
             List<BenzinBil> benzinListe = new List<BenzinBil>();
 
-            BenzinBil benzinBil1 = new BenzinBil("Seat", 500, 2014, "HJ 34 735", 30, 200);
+            bBenzinBil benzinBil1 = new BenzinBil("Seat", 500, 2014, "HJ 34 735", 30, 200);
             BenzinBil benzinBil2 = new BenzinBil("Peugeot", 550, 2015, "MK 97 254", 35, 300);
             BenzinBil benzinBil3 = new BenzinBil("Mercedes", 2000, 2016, "XZ 98 243", 50, 500);
             BenzinBil benzinBil4 = new BenzinBil("Toyota", 300, 2014, "OP 23 547", 27, 400);
@@ -41,8 +41,8 @@ namespace RepetitionInheritance
             benzinListe.Add(benzinBil1);
             benzinListe.Add(benzinBil2);
             benzinListe.Add(benzinBil3);
-            //benzinListe.Add(benzinBil4);
-            //benzinListe.Add(benzinBil5);
+            benzinListe.Add(benzinBil4);
+            benzinListe.Add(benzinBil5);
 
             foreach (BenzinBil bil in benzinListe)
             {
